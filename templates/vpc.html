@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>CLOUD FORMATION TEMPLATE GENERATOR</title>
+    <link href="static/css/vpcstyle.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+    <div class="row">
+        <div class="logo">
+        <img src="static/css/img/logo1.png"
+        </div>
+    <ul class="main-nav">
+        <li><a href="{{'/'}}"> HOME </a></li>
+        <li><a href="{{'/s3'}}"> S3 </a></li>
+        <li><a href="{{'/ec2'}}"> EC2 </a></li>
+        <li class="active"><a href=""> VPC </a></li>
+        <li><a href="{{'/rds'}}"> RDS </a></li>
+        <li><a href="{{'/login'}}"> LOGIN </a></li>
+        <li><a href=""> FAQ </a></li>
+    </ul>
+    </div>
+    <div class="create-bucket">
+      <form class="" action="rds.html" method="post">
+        <h1>Create VPC</h1>
+         <h3 class="select1">VPC</h3>
+        <input type="text" placeholder="Name" class="txtb">
+        <input type="text" placeholder="IPv4 CIDR block" class="txtb">
+          <h3 class="select1">Subnet</h3>
+        <input type="text" placeholder="Name" class="txtb">
+          <input type="text" placeholder="IPv4 CIDR block" class="txtb">
+        <p class="select1">Virtual Private Cloud</p>
+          <select name="vpc" class="txts">
+            <option value="Regions">vpc-c49e88a3</option>
+            <option value="Regions">vpc-0cdcc22ad39b44f67</option>
+          </select>
+          <h3 class="select1">Route Table</h3>
+        <input type="text" placeholder="Name" class="txtb">
+        <p class="select1">Virtual Private Cloud</p>
+          <select name="vpc" class="txts">
+            <option value="Regions">vpc-c49e88a3</option>
+            <option value="Regions">vpc-0cdcc22ad39b44f67</option>
+          </select>
+          <h3 class="select1">Internet Gateway</h3>
+        <input type="text" placeholder="Name" class="txtb">
+        <p class="select1">Virtual Private Cloud</p>
+          <select name="vpc" class="txts">
+            <option value="Regions">vpc-c49e88a3</option>
+            <option value="Regions">vpc-0cdcc22ad39b44f67</option>
+          </select>
+        <input type="submit" value="Create Database" class="bucket-btn">
+      </form>
+    </div>
+    </header>
+</body>
+</html>

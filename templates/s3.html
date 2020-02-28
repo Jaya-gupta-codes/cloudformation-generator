@@ -1,0 +1,54 @@
+
+<html>
+<head>
+    <title>CLOUD FORMATION TEMPLATE GENERATOR</title>
+    <link href="static/css/s3style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+    <div class="row">
+        <div class="logo">
+        <img src="static/css/img/logo1.png"
+        </div>
+    <ul class="main-nav">
+        <li><a href="{{'/'}}"> HOME </a></li>
+        <li class="active"><a href=""> S3 </a></li>
+        <li><a href="{{'/ec2'}}"> EC2 </a></li>
+        <li><a href="{{'/vpc'}}"> VPC </a></li>
+        <li><a href="{{'/rds'}}"> RDS </a></li>
+        <li><a href="{{'/login'}}"> LOGIN </a></li>
+        <li><a href=""> FAQ </a></li>
+    </ul>
+    </div>
+    <div class="create-bucket">
+      <form class="" action="/create_s3_bucket" method="POST">
+        <h1>Create Bucket</h1>
+        <input type="text" name = "bucket_name" placeholder="Bucket Name" class="txtb">
+          <input type="text" name = "description" placeholder="Description" class="txtb">
+        <!--<p class="select1">Select Your Region</p>
+          <select name="region" class="txts">
+            <option value="us-east-1">US East (N. Virginia) us-east-1</option>
+            <option value="us-east-2">US East (Ohio) us-east-2</option>
+            <option value="us-west-1">US West (N. California) us-west-1</option>
+            <option value="us-west-2">US West (Oregon) us-west-2</option>
+            <option value="ap-east-1">Asia Pacific (Hong Kong) ap-east-1</option>
+            <option value="ap-south-1">Asia Pacific (Mumbai) ap-south-1</option>
+            <option value="ap-northeast-2">Asia Pacific (Seoul) ap-northeast-2</option>
+            <option value="ap-southeast-1">Asia Pacific (Singapore)ap-southeast-1</option>
+            <option value="ap-southeast-2">Asia Pacific (Sydney)ap-southeast-2</option>
+            <option value="ap-northeast-1">Asia Pacific (Tokyo)ap-northeast-1</option>
+            <option value="ca-central-1">Canada (Central)ca-central-1</option>
+            <option value="eu-central-1">Europe (Frankfurt)eu-central-1</option>
+            <option value="eu-west-1">Europe (Ireland)eu-west-1</option>
+            <option value="eu-west-2">Europe (London)eu-west-2</option>
+            <option value="eu-west-3">Europe (Paris)eu-west-3</option>
+            <option value="eu-north-1">Europe (Stockholm)eu-north-1</option>
+            <option value="me-south-1">Middle East (Bahrain)me-south-1</option>
+            <option value="sa-east-1">South America (São Paulo)sa-east-1</option>
+          </select>-->
+         <input type="submit" value="Create Bucket" class="bucket-btn">
+      </form>
+    </div>
+    </header>
+</body>
+</html>

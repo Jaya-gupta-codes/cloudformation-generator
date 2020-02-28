@@ -1,0 +1,16 @@
+{
+    "Description": "sew",
+    "Outputs": {
+        "BucketName": {
+            "Description": "sew",
+            "Value": {
+                "Ref": "newbucket"
+            }
+        }
+    },
+    "Resources": {
+        "newbucket": {
+            "Type": "AWS::S3::Bucket"
+        }
+    }
+}

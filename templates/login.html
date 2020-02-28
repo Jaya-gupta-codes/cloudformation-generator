@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>CLOUD FORMATION TEMPLATE GENERATOR</title>
+    <link href="static/css/s3style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+    <div class="row">
+        <div class="logo">
+        <img src="static/css/img/logo1.png"
+        </div>
+    <ul class="main-nav">
+        <li><a href="{{'/'}}"> HOME </a></li>
+        <li><a href="{{'/s3'}}"> S3 </a></li>
+        <li><a href="{{'/ec2'}}"> EC2 </a></li>
+        <li><a href="{{'/vpc'}}"> VPC </a></li>
+        <li><a href="{{'/rds'}}"> RDS </a></li>
+        <li class="active"><a href=""> LOGIN </a></li>
+        <li><a href=""> FAQ </a></li>
+    </ul>
+    </div>
+    <div class="create-bucket">
+      <form class="" action="login.html" method="post">
+        <h1>Login</h1>
+        <input type="text" placeholder="Email" class="txtb">
+        <input type="password" placeholder="Password" class="txtb">
+        <input type="submit" value="Login" class="bucket-btn">
+        <a href="{{'/signup'}}">Dont Have an Account? Sign Up</a>
+      </form>
+    </div>
+    </header>
+</body>
+</html>

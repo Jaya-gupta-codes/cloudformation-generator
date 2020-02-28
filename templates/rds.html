@@ -1,0 +1,70 @@
+<html>
+<head>
+    <title>CLOUD FORMATION TEMPLATE GENERATOR</title>
+    <link href="static/css/s3style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+    <div class="row">
+        <div class="logo">
+        <img src="static/css/img/logo1.png"
+        </div>
+    <ul class="main-nav">
+        <li><a href="{{'/'}}"> HOME </a></li>
+        <li><a href="{{'/s3'}}"> S3 </a></li>
+        <li><a href="{{'/ec2'}}"> EC2 </a></li>
+        <li><a href="{{'/vpc'}}"> VPC </a></li>
+        <li class="active"><a href=""> RDS </a></li>
+        <li><a href="{{'/login'}}"> LOGIN </a></li>
+        <li><a href=""> FAQ </a></li>
+    </ul>
+    </div>
+    <div class="create-bucket">
+      <form class="" action="rds.html" method="post">
+        <h1>Create Database</h1>
+        <input type="text" placeholder="Database Name" class="txtb">
+        <input type="password" placeholder="Create Password" class="txtb">
+        <input type="password" placeholder="Retype Password" class="txtb">
+        <p class="select1">Select Your DB Instance Class</p>
+          <select name="Region" class="txts">
+            <option value="db.m4.large">db.m4.large (Standard Class)</option>
+            <option value="db.m4.xlarge">db.m4.xlarge (Standard Class)</option>
+            <option value="db.m4.2xlarge">db.m4.2xlarge (Standard Class)</option>
+            <option value="db.m4.4xlarge">db.m4.4xlarge (Standard Class)</option>
+            <option value="db.m5.large">db.m5.large (Standard Class)</option>
+            <option value="db.m5.xlarge">db.m5.xlarge (Standard Class)</option>
+            <option value="db.m5.2xlarge">db.m5.2xlarge (Standard Class)</option>
+            <option value="db.m5.4xlarge">db.m5.4xlarge (Standard Class)</option>
+            <option value="db.r4.large">db.r4.large (Memory Optimized Class)</option>
+            <option value="db.r4.xlarge">db.r4.xlarge (Memory Optimized Class)</option>
+            <option value="db.r4.2xlarge">db.r4.2xlarge (Memory Optimized Class)</option>
+            <option value="db.r4.4xlarge">db.r4.4xlarge (Memory Optimized Class)</option>
+            <option value="db.r5.large">db.r5.large (Memory Optimized Class)</option>
+            <option value="db.r5.xlarge">db.r5.xlarge (Memory Optimized Class)</option>
+            <option value="db.r5.2xlarge">db.r5.2xlarge (Memory Optimized Class)</option>
+            <option value="db.r5.4xlarge">db.r5.4xlarge (Memory Optimized Class)</option>
+            <option value="Regions">db.t2.micro (Burstable Class)</option>
+            <option value="Regions">db.t2.small (Burstable Class)</option>
+            <option value="Regions">db.t2.medium (Burstable Class)</option>
+            <option value="Regions">db.t2.large (Burstable Class)</option>
+            <option value="Regions">db.t2.xlarge (Burstable Class)</option>
+            <option value="Regions">db.t2.2xlarge (Burstable Class)</option>
+            <option value="Regions">db.t3.micro (Burstable Class)</option>
+            <option value="Regions">db.t3.small (Burstable Class)</option>
+            <option value="Regions">db.t3.medium (Burstable Class)</option>
+            <option value="Regions">db.t3.large (Burstable Class)</option>
+            <option value="Regions">db.t3.xlarge (Burstable Class)</option>
+            <option value="Regions">db.t3.2xlarge (Burstable Class)</option>
+          </select>
+        <p class="select1">Virtual Private Cloud</p>
+          <select name="vpc" class="txts">
+            option value="new">Create New VPC</option>
+            <option value="vpc-c49e88a3">vpc-c49e88a3 (Existing)</option>
+            <option value="vpc-0cdcc22ad39b44f67">vpc-0cdcc22ad39b44f67 (Existing)</option>
+          </select>
+        <input type="submit" value="Create Database" class="bucket-btn">
+      </form>
+    </div>
+    </header>
+</body>
+</html>
