@@ -15,8 +15,9 @@ def create():
     mycursor = mydb.cursor()
     mycursor.execute("SELECT * FROM s3_table")
     myresult = (mycursor.fetchone())
-    bname = myresult[0]
-    desc = myresult[1]
+    sname = myresult[0]
+    bname = myresult[1]
+    desc = myresult[2]
 
     t = Template()
     t.set_description(desc)
@@ -30,7 +31,4 @@ def create():
     file = open('s3json.json', 'w')
     file.write(t.to_json())
     file.close()
-
-
-def syscommand():
-    os.system('aws cloudformation create-stack --stack-name s3example --template-body file://s3json.json')
+    os.system('aws cloudformation create-stack --stack-name '+ sname +' --template-body file://s3json.json')

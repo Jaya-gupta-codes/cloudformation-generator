@@ -18,11 +18,12 @@ def create():
     mycursor = mydb.cursor()
     mycursor.execute("SELECT * FROM ec2_table")
     myresult = (mycursor.fetchone())
-    name = myresult[0]
-    region = myresult[1]
-    itype = myresult[2]
-    vpc1 = myresult[3]
-    subnet1 = myresult[4]
+    sname = myresult[0]
+    name = myresult[1]
+    region = myresult[2]
+    itype = myresult[3]
+    vpc1 = myresult[4]
+    subnet1 = myresult[5]
 
     #print(type(vpc1))
 
@@ -169,7 +170,4 @@ def create():
     file = open('ec2json.json', 'w')
     file.write(template.to_json())
     file.close()
-
-
-def syscommand():
-    os.system('aws cloudformation create-stack --stack-name ec2example --template-body file://ec2json.json')
+    os.system('aws cloudformation create-stack --stack-name ' + sname + ' --template-body file://ec2json.json')
