@@ -432,7 +432,7 @@ def create():
     ))
 
 
-    print(t.to_json())
+    # print(t.to_json())
     file = open('customizejson.json', 'w')
     file.write(t.to_json())
     file.close()

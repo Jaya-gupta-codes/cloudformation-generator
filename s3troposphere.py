@@ -27,7 +27,7 @@ def create():
         Value=Ref(s3bucket),
         Description=desc
     ))
-    print(t.to_json())
+    # print(t.to_json())
     file = open('s3json.json', 'w')
     file.write(t.to_json())
     file.close()
